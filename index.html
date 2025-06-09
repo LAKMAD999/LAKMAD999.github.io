@@ -13,12 +13,12 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f6f8;
-      color: #2c3e50;
+      background: #fdfcfb;
+      color: #1f2a40;
       font-size: 17px;
     }
     nav {
-      background: #e3eaf2;
+      background: #d6e4f0;
       padding: 1.5em 1em;
       position: fixed;
       height: 100%;
@@ -28,10 +28,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-right: 1px solid #c5d1dc;
+      border-right: 1px solid #c2d3e2;
+      transform: translateX(0);
+      transition: transform 0.3s ease;
     }
     nav h2 {
-      color: #0097a7;
+      color: #006994;
       margin-bottom: 1rem;
     }
     nav img {
@@ -40,10 +42,10 @@
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 3px solid #0097a7;
+      border: 3px solid #006994;
     }
     nav a {
-      color: #2c3e50;
+      color: #1f2a40;
       text-decoration: none;
       margin: 12px 0;
       font-weight: 500;
@@ -51,7 +53,18 @@
       transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #0097a7;
+      color: #006994;
+    }
+    .nav-toggle {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 28px;
+      color: #006994;
+      background: none;
+      border: none;
+      z-index: 1001;
     }
     main {
       margin-left: 260px;
@@ -62,7 +75,7 @@
       margin-bottom: 60px;
     }
     h1, h2, h3 {
-      color: #0097a7;
+      color: #006994;
       margin-bottom: 0.5em;
     }
     .section-content {
@@ -76,16 +89,36 @@
       margin: 10px 0;
     }
     .contact a {
-      color: #0097a7;
+      color: #006994;
       text-decoration: none;
     }
     .contact a:hover {
       text-decoration: underline;
     }
+    @media (max-width: 768px) {
+      nav {
+        transform: translateX(-100%);
+        width: 200px;
+        z-index: 1000;
+      }
+      nav.active {
+        transform: translateX(0);
+      }
+      .nav-toggle {
+        display: block;
+      }
+      main {
+        margin-left: 0;
+        padding: 1.5em;
+      }
+    }
   </style>
 </head>
-
 <body>
+  <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
+    ☰
+  </button>
+
   <nav>
     <h2>Lakshmi Surekha Maddukuri</h2>
     <img src="Surekha.jpg" alt="Surekha Maddukuri" />
@@ -110,16 +143,12 @@
       <div class="section-content">
         <p>With over 8 years of experience as a Full Stack Java Developer, I have contributed to a wide range of projects, handling end-to-end development responsibilities across backend, frontend, databases, and cloud environments.</p>
         <ul>
-          <li>Developed scalable and maintainable backend services using Java, Spring Boot, RESTful APIs, and microservices architecture.</li>
-          <li>Built responsive, user-friendly frontend interfaces using React.js and Angular, integrating seamlessly with REST APIs.</li>
-          <li>Designed and optimized database schemas, wrote complex queries, and handled data migration using MySQL, PostgreSQL, and SQL Server.</li>
-          <li>Integrated cloud services like AWS (EC2, S3, Lambda) and Azure (App Services, Functions) to deploy and scale applications efficiently.</li>
-          <li>Implemented CI/CD pipelines using Jenkins, Git, Maven, and Docker to automate testing, build, and deployment workflows.</li>
-          <li>Employed security best practices for authentication, authorization (OAuth2, JWT), and API protection.</li>
-          <li>Worked in agile environments, collaborating with cross-functional teams on sprint planning, code reviews, and daily stand-ups.</li>
-          <li>Focused on writing clean, testable, and well-documented code, and followed SOLID principles and design patterns.</li>
-          <li>Proactively contributed to performance optimization, scalability improvements, and debugging across both frontend and backend layers.</li>
-          <li>Acted as a technical mentor to junior developers and participated in architectural discussions to shape scalable software solutions.</li>
+          <li>Developed scalable backend services using Java, Spring Boot, RESTful APIs, and microservices architecture.</li>
+          <li>Built responsive frontend interfaces using React.js and Angular.</li>
+          <li>Worked with MySQL, PostgreSQL, and SQL Server databases for data design and optimization.</li>
+          <li>Integrated cloud services like AWS and Azure for scalable infrastructure.</li>
+          <li>Created CI/CD pipelines using Jenkins, Git, Maven, and Docker.</li>
+          <li>Applied security best practices including JWT and OAuth2.</li>
         </ul>
       </div>
     </section>
@@ -171,12 +200,12 @@
       <h2>Education</h2>
       <div class="section-content">
         <div style="margin-bottom: 20px;">
-          <i class="fas fa-user-graduate" title="Master's Degree" style="color: #0097a7; font-size: 24px; margin-right: 10px;"></i>
+          <i class="fas fa-user-graduate" title="Master's Degree" style="color: #006994; font-size: 24px; margin-right: 10px;"></i>
           <strong>University of North Texas</strong> | Denton, TX | USA
           <p>Master of Science – Computer Science and Engineering</p>
         </div>
         <div>
-          <i class="fas fa-graduation-cap" title="Bachelor's Degree" style="color: #0097a7; font-size: 24px; margin-right: 10px;"></i>
+          <i class="fas fa-graduation-cap" title="Bachelor's Degree" style="color: #006994; font-size: 24px; margin-right: 10px;"></i>
           <strong>Pragati Engineering College</strong> | India
           <p>Bachelor of Science – Computer Science</p>
         </div>
@@ -187,19 +216,25 @@
       <h2>Contact</h2>
       <div class="section-content contact" style="line-height: 2;">
         <p>
-          <i class="fas fa-envelope" style="color: #0097a7; margin-right: 8px;"></i>
+          <i class="fas fa-envelope" style="color: #006994; margin-right: 8px;"></i>
           <a href="mailto:lakshmimaddukuri1112@gmail.com">lakshmimaddukuri1112@gmail.com</a>
         </p>
         <p>
-          <i class="fas fa-phone-alt" style="color: #0097a7; margin-right: 8px;"></i>
+          <i class="fas fa-phone-alt" style="color: #006994; margin-right: 8px;"></i>
           <a href="tel:+19403315287">+1 940 331 5287</a>
         </p>
         <p>
-          <i class="fab fa-linkedin" style="color: #0097a7; margin-right: 8px;"></i>
+          <i class="fab fa-linkedin" style="color: #006994; margin-right: 8px;"></i>
           <a href="https://www.linkedin.com/in/lakshmimaddukuri" target="_blank">Surekha Maddukuri</a>
         </p>
       </div>
     </section>
   </main>
+
+  <script>
+    function toggleNav() {
+      document.querySelector('nav').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
