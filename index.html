@@ -139,19 +139,124 @@
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
-      <div class="section-content">
-        <p>With over 8 years of experience as a Full Stack Java Developer, I have contributed to a wide range of projects, handling end-to-end development responsibilities across backend, frontend, databases, and cloud environments.</p>
+  <h2>Experience</h2>
+  <div class="section-content">
+
+    <!-- Job Card Template -->
+    <style>
+      .exp-card {
+        border: 1px solid #c2d3e2;
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+        background: #ffffff;
+      }
+      .exp-card h3 {
+        margin-bottom: 0.3em;
+      }
+      .exp-card p {
+        margin: 4px 0 10px;
+      }
+      .exp-summary {
+        font-size: 15px;
+        color: #333;
+      }
+      details summary {
+        cursor: pointer;
+        color: #006994;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      details ul {
+        margin-top: 10px;
+      }
+    </style>
+
+    <!-- PepsiCo -->
+    <div class="exp-card">
+      <h3>Full Stack Developer – PepsiCo, Plano, TX</h3>
+      <p><em>Jan 2023 – Present</em></p>
+      <p class="exp-summary">Built an AWS-based microservices platform for order fulfillment using Java 17, Angular 14, PostgreSQL, Kafka, and Jenkins.</p>
+      <details>
+        <summary>View Details</summary>
         <ul>
-          <li>Developed scalable backend services using Java, Spring Boot, RESTful APIs, and microservices architecture.</li>
-          <li>Built responsive frontend interfaces using React.js and Angular.</li>
-          <li>Worked with MySQL, PostgreSQL, and SQL Server databases for data design and optimization.</li>
-          <li>Integrated cloud services like AWS and Azure for scalable infrastructure.</li>
-          <li>Created CI/CD pipelines using Jenkins, Git, Maven, and Docker.</li>
-          <li>Applied security best practices including JWT and OAuth2.</li>
+          <li>Developed Spring Boot microservices for order validation, routing, and delivery updates.</li>
+          <li>Built Angular 14 UI with KPI dashboards, smart filters, and session-secured modules.</li>
+          <li>Deployed to AWS EKS and RDS; used Kafka for event streaming and Jenkins for CI/CD.</li>
+          <li>Logged system activity with Logback and visualized KPIs in AWS CloudWatch.</li>
         </ul>
-      </div>
-    </section>
+      </details>
+    </div>
+
+    <!-- Cigna -->
+    <div class="exp-card">
+      <h3>Full Stack Developer – Cigna, Bloomfield, CT</h3>
+      <p><em>Dec 2021 – Nov 2023</em></p>
+      <p class="exp-summary">Delivered a real-time wellness and claims dashboard using Spring Boot, React 17, MongoDB, Azure, and Kafka.</p>
+      <details>
+        <summary>View Details</summary>
+        <ul>
+          <li>Created RESTful APIs for claims processing, SSO integration, and JWT-based security.</li>
+          <li>Built React components with Hooks, Context API, and Material UI for accessibility compliance.</li>
+          <li>Handled event-driven health updates using Apache Kafka and Cosmos DB on Azure.</li>
+          <li>Managed pipelines via GitLab CI/CD and monitored performance using Azure Monitor.</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- CarePassport -->
+    <div class="exp-card">
+      <h3>Full Stack Developer – CarePassport, Boston, MA</h3>
+      <p><em>Feb 2020 – Nov 2021</em></p>
+      <p class="exp-summary">Developed a FHIR-integrated radiology access portal using Java, Angular, MongoDB, Azure, and RabbitMQ.</p>
+      <details>
+        <summary>View Details</summary>
+        <ul>
+          <li>Built microservices to manage imaging records and access controls using JWT and Spring Security.</li>
+          <li>Enabled secure downloads, role-based dashboards, and appointment scheduling via Angular.</li>
+          <li>Used RabbitMQ for image processing jobs and Azure Blob for archival storage.</li>
+          <li>Implemented TDD with JUnit and CI/CD using GitLab pipelines.</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- First Horizon Bank -->
+    <div class="exp-card">
+      <h3>Full Stack Developer – First Horizon Bank, Memphis, TN</h3>
+      <p><em>Aug 2018 – Jan 2020</em></p>
+      <p class="exp-summary">Digitized loan workflows using Spring Boot, React, PostgreSQL, AWS, and Kafka.</p>
+      <details>
+        <summary>View Details</summary>
+        <ul>
+          <li>Developed Java microservices for credit scoring, document review, and onboarding flows.</li>
+          <li>Created React interfaces with e-signature modules and real-time status dashboards.</li>
+          <li>Used Kafka for async updates and Jenkins + SonarQube for secure builds.</li>
+          <li>Deployed APIs to AWS EC2 with data stored in encrypted RDS instances.</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- MyGate -->
+    <div class="exp-card">
+      <h3>Software Developer – MyGate, Bengaluru, IN</h3>
+      <p><em>Jun 2017 – Jul 2018</em></p>
+      <p class="exp-summary">Built GCP-hosted access control APIs and Angular UIs for India’s leading gated society app.</p>
+      <details>
+        <summary>View Details</summary>
+        <ul>
+          <li>Developed Spring Boot services for visitor approvals, staff logs, and resident communication.</li>
+          <li>Used ActiveMQ for real-time alerts and Angular for resident-facing dashboards.</li>
+          <li>Deployed to GCP Compute Engine and managed GitLab CI/CD for production pushes.</li>
+          <li>Enabled traceable logging with Logback and assisted with live issue resolution in field rollouts.</li>
+        </ul>
+      </details>
+    </div>
+
+  </div>
+</section>
+
 
     <section id="skills">
       <h2>Skills</h2>
