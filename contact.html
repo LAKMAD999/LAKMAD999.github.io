@@ -1,24 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>Contact – Surekha Maddukuri</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body { font-family: 'Segoe UI', sans-serif; padding: 2rem; background: #fdfdff; }
-    nav a { margin-right: 15px; text-decoration: none; color: #0073e6; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #f0f4f8, #e8f1fa, #ffffff, #eaf0ff);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    nav {
+      margin-bottom: 30px;
+      padding: 10px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: 500;
+    }
+
+    .contact-container {
+      background: #ffffffee;
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #0073e6;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-item {
+      margin: 1.2rem 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-item i {
+      margin-right: 10px;
+      color: #333;
+    }
+
+    .contact-item a {
+      text-decoration: none;
+      color: #005999;
+      font-weight: bold;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="education.html">Education</a>
-  </nav>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="education.html">Education</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="contact-container">
   <h1>Contact</h1>
-  <p><i class="fas fa-envelope"></i> <a href="mailto:lakshmimaddukuri1111@gmail.com">lakshmimaddukuri1111@gmail.com</a></p>
-  <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/laksurmad999">LinkedIn</a></p>
+
+  <div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:lakshmimaddukuri1111@gmail.com">lakshmimaddukuri1111@gmail.com</a>
+  </div>
+
+  <div class="contact-item">
+    <i class="fab fa-linkedin"></i>
+    <a href="https://linkedin.com/in/lakshmi-surekha-maddukuri-a00097216" target="_blank">LinkedIn Profile</a>
+  </div>
+
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    Dallas, TX, USA
+  </div>
+</div>
+
 </body>
 </html>
