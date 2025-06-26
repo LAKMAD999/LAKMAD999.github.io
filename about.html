@@ -2,45 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About - Surekha Maddukuri</title>
+  <title>About – Surekha Maddukuri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      padding: 2rem;
-      background: linear-gradient(-45deg, #f0f4f8, #e8f1fa, #ffffff, #eaf0ff);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
+      margin: 0;
+      background: #f3f7fb;
     }
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+
+    nav {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
     nav a {
-      margin-right: 15px;
+      margin: 0 15px;
       text-decoration: none;
       color: #0073e6;
       font-weight: 500;
     }
-    nav {
-      margin-bottom: 30px;
-      padding: 10px;
-      background: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    nav a:hover {
+      text-decoration: underline;
     }
-    img {
+
+    .about-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .about-section img {
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      width: 140px;
-      height: 140px;
-      float: left;
-      margin-right: 20px;
-      border: 3px solid #0073e6;
+      border: 4px solid #0073e6;
       object-fit: cover;
     }
-    section {
-      clear: both;
-      padding-top: 1rem;
+
+    .about-section h1 {
+      font-size: 2rem;
+      color: #0073e6;
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .about-section img {
+        margin: auto;
+      }
     }
   </style>
 </head>
@@ -55,20 +88,19 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<section id="about">
-  <h1>About Me</h1>
-  <img src="Surekha.jpg" alt="Surekha Maddukuri" />
+<div class="about-section">
+  <img src="surekha-profile.png" alt="Surekha Maddukuri" />
+  <div>
+    <h1>About Me</h1>
+    <p>Hello! I'm <strong>Lakshmi Surekha Maddukuri</strong>, a Full Stack Java Developer with <strong>8+ years of experience</strong> building scalable, production-ready enterprise applications across healthcare, banking, and logistics domains.</p>
 
-  <p>Hello! I'm <strong>Lakshmi Surekha Maddukuri</strong>, a Full Stack Java Developer with over <strong>8 years of professional experience</strong> designing and developing enterprise-grade applications across healthcare, banking, and logistics domains.</p>
+    <p>I specialize in backend development using <strong>Java (8–17), Spring Boot</strong>, and frontend interfaces with <strong>React</strong> and <strong>Angular</strong>. My experience includes RESTful API design, microservices, Kafka-based messaging, and CI/CD workflows with <strong>AWS</strong> and <strong>Azure</strong>.</p>
 
-  <p>I specialize in building scalable backend systems using <strong>Java (8–17), Spring Boot</strong>, and integrating dynamic frontend interfaces using <strong>React and Angular</strong>. I’ve delivered production-ready microservices, real-time dashboards, and secure APIs for high-availability applications.</p>
+    <p>I've led teams, mentored developers, collaborated in Agile environments, and debugged mission-critical systems in production. Whether it’s DevOps automation, security-first API design, or high-availability deployment, I aim to deliver clean, reliable solutions.</p>
 
-  <p>My passion lies in building clean, efficient, and maintainable code, solving complex problems with practical design patterns, and enabling seamless user experiences. I'm deeply familiar with <strong>RESTful API design, Kafka-based messaging systems, AWS/Azure deployments, Docker, Kubernetes, and CI/CD pipelines</strong>.</p>
-
-  <p>I believe in continuous learning, agile collaboration, and uplifting teams through mentorship and strong communication. Whether it’s optimizing DevOps workflows, onboarding junior developers, or debugging tricky production issues — I bring curiosity, focus, and determination to the table.</p>
-
-  <p>Outside of coding, I enjoy exploring new tech trends, fine-tuning my portfolio, and contributing to engineering excellence. Let’s build something impactful together!</p>
-</section>
+    <p>Outside of coding, I enjoy staying updated with new tech trends, working on personal projects, and sharing knowledge through mentorship and blogs.</p>
+  </div>
+</div>
 
 </body>
 </html>
