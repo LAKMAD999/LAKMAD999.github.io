@@ -62,6 +62,7 @@
       height: 140px;
       object-fit: cover;
       border: 3px solid #0073e6;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
     .project {
       background: #fff;
@@ -73,6 +74,7 @@
     .project img {
       width: 100%;
       border-radius: 6px;
+      margin-bottom: 10px;
     }
     .project summary {
       cursor: pointer;
@@ -96,6 +98,10 @@
       background: #f1f1f1;
       margin-top: 3rem;
     }
+    section {
+      clear: both;
+      padding-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -117,17 +123,18 @@
 
 <section id="about">
   <h1>About Me</h1>
-  <img src="Surekha.jpg" alt="Surekha Maddukuri" class="about-img">
+  <img src="Surekha.png" alt="Surekha Maddukuri" class="about-img">
   <p>I'm a passionate Full Stack Developer with over <strong>8 years of experience</strong> crafting enterprise web applications across <strong>healthcare, banking, and logistics</strong> domains. I specialize in building scalable backends using <strong>Java (8–17), Spring Boot</strong> and creating intuitive UIs with <strong>React and Angular</strong>.</p>
   <p>My expertise spans <strong>RESTful API design, microservices architecture, AWS/Azure deployment, Kafka messaging, and CI/CD automation</strong>. I've led modules, mentored juniors, and actively contributed to Agile teams focused on delivering impactful solutions.</p>
   <p>When I'm not coding, I enjoy optimizing developer workflows, exploring new tools, and building polished frontend experiences that users love.</p>
 </section>
-  <section id="projects">
+
+<section id="projects">
   <h2>Projects</h2>
 
   <div class="project">
     <img src="https://via.placeholder.com/800x400?text=PepsiCo+Dashboard" alt="PepsiCo Project" />
-    <h3>PepsiCo – Smart Order Optimization & Fulfillment Platform - Jan 2023 - Present</h3>
+    <h3>PepsiCo – Smart Order Optimization & Fulfillment Platform<br><small>Jan 2023 – Present</small></h3>
     <p>Built microservices platform on AWS with real-time dashboards and Kafka streams.</p>
     <details><summary>View Details</summary>
       <ul>
@@ -140,7 +147,7 @@
 
   <div class="project">
     <img src="https://via.placeholder.com/800x400?text=Cigna+Claims+Portal" alt="Cigna Project" />
-    <h3>Cigna – Member Wellness & Claims Insights Portal - Dec 2021 - Nov 2023</h3>
+    <h3>Cigna – Wellness & Claims Insights Portal<br><small>Dec 2021 – Nov 2023</small></h3>
     <p>Real-time React portal to track wellness metrics and claim statuses using Azure stack.</p>
     <details><summary>View Details</summary>
       <ul>
@@ -152,8 +159,8 @@
   </div>
 
   <div class="project">
-    <img src="https://via.placeholder.com/800x400?text=CarePassport" alt="CarePassport Project" />
-    <h3>CarePassport – Cross-Facility Medical Imaging & Records Portal- Feb 2020 - Nov 2021</h3>
+    <img src="https://via.placeholder.com/800x400?text=CarePassport+Portal" alt="CarePassport Project" />
+    <h3>CarePassport – Medical Imaging & Records Access<br><small>Feb 2020 – Nov 2021</small></h3>
     <p>FHIR-based imaging system built on Java, Angular and Azure Blob for hospitals.</p>
     <details><summary>View Details</summary>
       <ul>
@@ -165,8 +172,8 @@
   </div>
 
   <div class="project">
-    <img src="https://via.placeholder.com/800x400?text=First+Horizon+Bank" alt="FHB Project" />
-    <h3>First Horizon Bank – Digital Loan Processing & Approval System - Aug 2018 - Jan 2020</h3>
+    <img src="https://via.placeholder.com/800x400?text=First+Horizon+Loan+System" alt="FHB Project" />
+    <h3>First Horizon Bank – Loan Approval Workflow<br><small>Aug 2018 – Jan 2020</small></h3>
     <p>Automated loan approval system with React dashboards and Spring Boot services.</p>
     <details><summary>View Details</summary>
       <ul>
@@ -178,8 +185,8 @@
   </div>
 
   <div class="project">
-    <img src="https://via.placeholder.com/800x400?text=MyGate" alt="MyGate Project" />
-    <h3>MyGate – Smart Access Control & Resident Communication App - June 2017 - July 2018</h3>
+    <img src="https://via.placeholder.com/800x400?text=MyGate+Security+App" alt="MyGate Project" />
+    <h3>MyGate – Gated Community Access Platform<br><small>June 2017 – July 2018</small></h3>
     <p>India's premier gated community access system with real-time alerts and visitor logs.</p>
     <details><summary>View Details</summary>
       <ul>
@@ -234,4 +241,5 @@
 
 </body>
 </html>
+
 
