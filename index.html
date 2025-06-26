@@ -2,238 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Surekha Maddukuri – Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surekha Maddukuri - Home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0; font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(-45deg, #f0f4f8, #e8f1fa, #ffffff, #eaf0ff);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      color: #1a1a1a;
+      background-size: 400% 400%; animation: bg 10s ease infinite;
     }
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-    header {
-      background: #ffffffcc;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(8px);
-      z-index: 999;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: center;
-      max-width: 1100px;
-      margin: auto;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #0073e6;
-    }
-    .container {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    h1, h2 {
-      color: #0073e6;
-    }
-    .about-img {
-      float: left;
-      margin-right: 20px;
-      border-radius: 100px;
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border: 3px solid #0073e6;
-    }
-    .project {
-      background: #fff;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
-    }
-    .project summary {
-      cursor: pointer;
-      font-weight: bold;
-      color: #0073e6;
-      margin-top: 1rem;
-    }
-    .skills-icons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    .skills-icons i {
-      font-size: 36px;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.85rem;
-      color: #666;
-      padding: 2rem;
-      background: #f1f1f1;
-      margin-top: 3rem;
-    }
+    @keyframes bg { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    header, nav a { padding: 1rem; color: #0073e6; text-decoration: none; }
+    nav { display: flex; justify-content: center; gap: 1rem; background: #fff; box-shadow: 0 2px 4px #ccc; }
+    main { padding: 2rem; text-align: center; }
   </style>
 </head>
 <body>
-
-<header>
   <nav>
-    <div><strong>Surekha Maddukuri</strong></div>
-    <div>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
   </nav>
-</header>
-
-<div class="container">
-
-<section id="about">
-  <h1>About Me</h1>
-  <img src="Surekha.jpg" alt="Surekha Maddukuri" class="about-img">
-  <p>I'm a passionate Full Stack Developer with over <strong>8 years of experience</strong> crafting enterprise web applications across <strong>healthcare, banking, and logistics</strong> domains. I specialize in building scalable backends using <strong>Java (8–17), Spring Boot</strong> and creating intuitive UIs with <strong>React and Angular</strong>.</p>
-  <p>My expertise spans <strong>RESTful API design, microservices architecture, AWS/Azure deployment, Kafka messaging, and CI/CD automation</strong>. I've led modules, mentored juniors, and actively contributed to Agile teams focused on delivering impactful solutions.</p>
-  <p>When I'm not coding, I enjoy optimizing developer workflows, exploring new tools, and building polished frontend experiences that users love.</p>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>PepsiCo – Smart Order Optimization & Fulfillment Platform</h3>
-    <p><em>Jan 2023 – Present</em></p>
-    <p>Built microservices platform on AWS with real-time dashboards and Kafka streams.</p>
-    <details><summary>View Details</summary>
-      <ul>
-        <li>Spring Boot microservices for order routing & delivery updates</li>
-        <li>Angular dashboards with KPI filters & secure login</li>
-        <li>Kafka for streaming, Jenkins for CI/CD, CloudWatch for metrics</li>
-      </ul>
-    </details>
-  </div>
-
-  <div class="project">
-    <h3>Cigna – Member Wellness & Claims Insights Portal</h3>
-    <p><em>Dec 2021 – Nov 2023</em></p>
-    <p>React portal to track wellness metrics and claim statuses using Azure stack.</p>
-    <details><summary>View Details</summary>
-      <ul>
-        <li>REST APIs with JWT for claims processing and user roles</li>
-        <li>React components with MUI and context API</li>
-        <li>CosmosDB, Kafka and Azure Monitor for event-driven pipelines</li>
-      </ul>
-    </details>
-  </div>
-
-  <div class="project">
-    <h3>CarePassport – Medical Imaging & Records Portal</h3>
-    <p><em>Feb 2020 – Nov 2021</em></p>
-    <p>FHIR-based imaging system built on Java, Angular and Azure Blob for hospitals.</p>
-    <details><summary>View Details</summary>
-      <ul>
-        <li>Spring Security with JWT for role-based access</li>
-        <li>Angular portal for downloads and appointment tracking</li>
-        <li>RabbitMQ + Azure Blob for async uploads and archival</li>
-      </ul>
-    </details>
-  </div>
-
-  <div class="project">
-    <h3>First Horizon Bank – Digital Loan Approval System</h3>
-    <p><em>Aug 2018 – Jan 2020</em></p>
-    <p>Loan system with React dashboards and Spring Boot microservices.</p>
-    <details><summary>View Details</summary>
-      <ul>
-        <li>Backend APIs for credit scores and document review</li>
-        <li>Kafka + RDS; SonarQube & Jenkins for secure builds</li>
-        <li>React UI for onboarding and tracking</li>
-      </ul>
-    </details>
-  </div>
-
-  <div class="project">
-    <h3>MyGate – Smart Access Control & Resident Communication App</h3>
-    <p><em>June 2017 – July 2018</em></p>
-    <p>India's premier gated community access system with real-time alerts and visitor logs.</p>
-    <details><summary>View Details</summary>
-      <ul>
-        <li>Spring Boot APIs for entry control, logs and user verification</li>
-        <li>Angular dashboards for residents, admins and security staff</li>
-        <li>Deployed on GCP, integrated ActiveMQ & GitLab pipelines</li>
-      </ul>
-    </details>
-  </div>
-
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-icons">
-    <i class="devicon-java-plain colored" title="Java"></i>
-    <i class="devicon-spring-plain colored" title="Spring Boot"></i>
-    <i class="devicon-react-original colored" title="React.js"></i>
-    <i class="devicon-angularjs-plain colored" title="Angular"></i>
-    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-    <i class="devicon-html5-plain colored" title="HTML5"></i>
-    <i class="devicon-css3-plain colored" title="CSS3"></i>
-    <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
-    <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-    <i class="devicon-amazonwebservices-original colored" title="AWS"></i>
-    <i class="devicon-azure-plain colored" title="Azure"></i>
-    <i class="devicon-docker-plain colored" title="Docker"></i>
-    <i class="devicon-kubernetes-plain colored" title="Kubernetes"></i>
-    <i class="devicon-git-plain colored" title="Git"></i>
-    <i class="devicon-github-original colored" title="GitHub"></i>
-    <i class="devicon-jenkins-line colored" title="Jenkins"></i>
-  </div>
-</section>
-
-<section id="education">
-  <h2>Education</h2>
-  <p>
-    <i class="fas fa-user-graduate" style="color: #0073e6; margin-right: 8px;"></i>
-    <strong>University of North Texas</strong> – M.S. in Computer Science
-  </p>
-  <p>
-    <i class="fas fa-graduation-cap" style="color: #0073e6; margin-right: 8px;"></i>
-    <strong>Pragati Engineering College</strong> – B.Tech in Computer Science
-  </p>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p><i class="fas fa-envelope"></i> <a href="mailto:lakshmimaddukuri1111@gmail.com">lakshmimaddukuri1111@gmail.com</a></p>
-  <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/lakshmi-surekha-maddukuri-a00097216" target="_blank">LinkedIn</a></p>
-</section>
-
-</div>
-
-<footer>
-  &copy; 2025 Lakshmi Surekha Maddukuri. All rights reserved.
-</footer>
-
+  <main>
+    <h1>Welcome to Surekha Maddukuri's Portfolio</h1>
+    <p>Explore my experience as a Full Stack Java Developer with 8+ years of enterprise expertise.</p>
+  </main>
 </body>
 </html>
+
