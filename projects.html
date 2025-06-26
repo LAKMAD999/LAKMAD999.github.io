@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects – Surekha Maddukuri</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      background: linear-gradient(-45deg, #f0f4f8, #e8f1fa, #ffffff, #eaf0ff);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    nav {
+      margin-bottom: 30px;
+      padding: 10px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: 500;
+    }
+    .project {
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    }
+    .project h3 {
+      margin-bottom: 0.2rem;
+      color: #005999;
+    }
+    .project p {
+      margin: 0.2rem 0 0.8rem;
+      color: #333;
+    }
+    .project ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .project i {
+      margin-right: 8px;
+      color: #0073e6;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="education.html">Education</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<h1>Projects</h1>
+
+<div class="project">
+  <h3><i class="fas fa-industry"></i> PepsiCo – Full Stack Developer</h3>
+  <p><strong>Jan 2023 – Present</strong></p>
+  <p>Smart Order Optimization & Fulfillment Platform</p>
+  <ul>
+    <li>Developed Spring Boot microservices for order routing & delivery updates.</li>
+    <li>Built Angular dashboards with KPI filters & secure login.</li>
+    <li>Used Kafka for streaming, Jenkins for CI/CD, CloudWatch for metrics.</li>
+    <li>Deployed to AWS EKS with secure authentication layers.</li>
+  </ul>
+</div>
+
+<div class="project">
+  <h3><i class="fas fa-notes-medical"></i> Cigna – Full Stack Developer</h3>
+  <p><strong>Dec 2021 – Nov 2023</strong></p>
+  <p>Member Wellness & Claims Insights Portal</p>
+  <ul>
+    <li>Built REST APIs with JWT for claims processing and user roles.</li>
+    <li>Created React components with MUI and context API.</li>
+    <li>Handled CosmosDB, Kafka and Azure Monitor for event-driven pipelines.</li>
+    <li>Optimized page load by implementing lazy loading and compression techniques.</li>
+  </ul>
+</div>
+
+<div class="project">
+  <h3><i class="fas fa-hospital-user"></i> CarePassport – Full Stack Developer</h3>
+  <p><strong>Feb 2020 – Nov 2021</strong></p>
+  <p>Cross-Facility Medical Imaging & Records Portal</p>
+  <ul>
+    <li>Built microservices to manage imaging records and access controls using JWT.</li>
+    <li>Angular portal enabled secure downloads and appointment scheduling.</li>
+    <li>Used RabbitMQ for image processing jobs and Azure Blob for archival storage.</li>
+    <li>Practiced TDD with JUnit and automated deployment with GitLab CI.</li>
+  </ul>
+</div>
+
+<div class="project">
+  <h3><i class="fas fa-university"></i> First Horizon Bank – Full Stack Developer</h3>
+  <p><strong>Aug 2018 – Jan 2020</strong></p>
+  <p>Digital Loan Processing & Approval System</p>
+  <ul>
+    <li>Java microservices for credit scoring, document review, and customer onboarding.</li>
+    <li>React UI for e-signatures and real-time status dashboards.</li>
+    <li>Used Kafka for async events, Jenkins & SonarQube for secure builds.</li>
+    <li>Deployed to AWS EC2 and encrypted data using RDS KMS.</li>
+  </ul>
+</div>
+
+<div class="project">
+  <h3><i class="fas fa-door-open"></i> MyGate – Software Developer</h3>
+  <p><strong>Jun 2017 – Jul 2018</strong></p>
+  <p>Smart Access Control & Resident Communication App</p>
+  <ul>
+    <li>Spring Boot APIs for visitor approvals, staff logs, and resident messaging.</li>
+    <li>Angular dashboard for real-time alerts and role-based dashboards.</li>
+    <li>Integrated ActiveMQ, deployed on GCP Compute Engine.</li>
+    <li>Implemented live monitoring and production-ready deployments via GitLab CI/CD.</li>
+  </ul>
+</div>
+
+</body>
+</html>
