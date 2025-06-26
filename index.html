@@ -2,22 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Surekha Maddukuri - Home</title>
+  <title>Surekha Maddukuri – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      margin: 0; font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       background: linear-gradient(-45deg, #f0f4f8, #e8f1fa, #ffffff, #eaf0ff);
-      background-size: 400% 400%; animation: bg 10s ease infinite;
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
     }
-    @keyframes bg { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
-    header, nav a { padding: 1rem; color: #0073e6; text-decoration: none; }
-    nav { display: flex; justify-content: center; gap: 1rem; background: #fff; box-shadow: 0 2px 4px #ccc; }
-    main { padding: 2rem; text-align: center; }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    nav {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      max-width: 900px;
+      margin: 80px auto;
+      text-align: center;
+      padding: 2rem;
+      background: #ffffffcc;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .main-container img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0073e6;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -26,10 +91,12 @@
     <a href="education.html">Education</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <main>
+
+  <div class="main-container">
+    <img src="Surekha.jpg" alt="Surekha Maddukuri" />
     <h1>Welcome to Surekha Maddukuri's Portfolio</h1>
-    <p>Explore my experience as a Full Stack Java Developer with 8+ years of enterprise expertise.</p>
-  </main>
+    <p>Explore my experience as a <strong>Full Stack Java Developer</strong> with <strong>8+ years</strong> of enterprise expertise.</p>
+  </div>
+
 </body>
 </html>
-
