@@ -7,17 +7,10 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(-45deg, #f0f4f8, #e8f1fa, #ffffff, #eaf0ff);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
       margin: 0;
       padding: 2rem;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      background: linear-gradient(to right, #f3e5f5, #e1bee7);
+      color: #1f1f1f;
     }
 
     nav {
@@ -25,47 +18,62 @@
       padding: 10px;
       background: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
     nav a {
-      margin-right: 15px;
+      margin: 0 12px;
       text-decoration: none;
-      color: #0073e6;
+      color: #6a1b9a;
       font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4a0072;
     }
 
     .contact-container {
       background: #ffffffee;
       max-width: 600px;
       margin: 3rem auto;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
 
     h1 {
-      color: #0073e6;
-      margin-bottom: 1.5rem;
+      color: #6a1b9a;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 1.8rem;
+      color: #555;
     }
 
     .contact-item {
-      margin: 1.2rem 0;
+      margin: 1.4rem 0;
       font-size: 1.1rem;
     }
 
     .contact-item i {
       margin-right: 10px;
-      color: #333;
+      color: #6a1b9a;
     }
 
     .contact-item a {
       text-decoration: none;
-      color: #005999;
+      color: #4a0072;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     .contact-item a:hover {
+      color: #1a004e;
       text-decoration: underline;
     }
   </style>
@@ -83,6 +91,7 @@
 
 <div class="contact-container">
   <h1>Contact</h1>
+  <div class="subtitle">Get in touch or connect with me professionally.</div>
 
   <div class="contact-item">
     <i class="fas fa-envelope"></i>
